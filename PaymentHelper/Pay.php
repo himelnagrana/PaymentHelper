@@ -2,7 +2,7 @@
 
 namespace Helper\Payment;
 
-class Factory
+class Pay
 {
     public static function get($method, $container, $amount)
     {

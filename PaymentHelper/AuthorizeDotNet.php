@@ -26,7 +26,7 @@ class AuthorizeDotNet implements Base
         $this->response = new \stdClass();
         $this->response->status = '200';
         $this->response->message = 'Payment is successful';
-        $this->response->transaction_id = 'PP-PAYMENT-'.md5($data['company_id']. '-' .$data['user_id']. '-' .time());
+        $this->response->transaction_id = 'PP-PAYMENT-CARD-'.md5($data['company_id']. '-' .$data['user_id']. '-' .time());
 
         return $this->response;
     }
